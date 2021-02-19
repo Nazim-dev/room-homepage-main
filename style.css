@@ -1,0 +1,504 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Spartan", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+#section-one {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto;
+  max-height: 534px;
+}
+
+.display-image-container {
+  position: relative;
+  max-width: 100%;
+}
+
+.scroll-arrows-mobile {
+  position: absolute;
+  display: none;
+  bottom: 5px;
+  right: 0;
+}
+
+.scroll-arrows-mobile span {
+  margin: 0;
+  padding: 14px 24px;
+  background: black;
+}
+
+#header-navigation {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  color: white;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+#header-navigation .links {
+  cursor: pointer;
+  position: relative;
+  top: 3px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 400px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style-type: none;
+}
+
+#header-navigation .links li:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  border-bottom: 2px solid white;
+  padding-top: 10px;
+  opacity: 0;
+}
+
+#header-navigation .links li:hover:after {
+  opacity: 1;
+}
+
+#header-navigation-mobile {
+  display: none;
+  z-index: 1;
+}
+
+.call-to-action {
+  position: relative;
+  display: block;
+  padding: 75px 90px;
+}
+
+.call-to-action h1 {
+  color: black;
+  font-size: 32px;
+}
+
+.call-to-action p {
+  color: #a1a1a1;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.call-to-action .button {
+  cursor: pointer;
+  margin-top: 40px;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+
+.call-to-action .button:hover {
+  opacity: 0.7;
+}
+
+.call-to-action .scroll-arrows {
+  position: absolute;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  bottom: 5px;
+  left: 0;
+}
+
+.call-to-action .scroll-arrows span {
+  margin: 0;
+  padding: 18px 33px;
+  background: black;
+}
+
+.call-to-action .scroll-arrows span:hover {
+  background: #454545;
+}
+
+#section-two {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto;
+}
+
+.about-text {
+  padding: 60px 35px;
+}
+
+.about-text h4 {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.about-text p {
+  color: #454545;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+@media only screen and (max-width: 375px) {
+  #header-navigation {
+    display: none;
+  }
+  .display-image {
+    max-width: 100%;
+  }
+  #section-one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #header-navigation-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    background: none;
+  }
+  #header-navigation-mobile #menu {
+    position: relative;
+    left: 30px;
+    width: 16px;
+    height: 14px;
+    background-image: url(images/icon-hamburger.svg);
+    background-repeat: no-repeat;
+  }
+  #header-navigation-mobile .logo-header {
+    display: block;
+    position: relative;
+    top: 3px;
+    left: 150px;
+  }
+  #header-navigation-mobile .links {
+    display: none;
+    width: 300px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    list-style-type: none;
+  }
+  .scroll-arrows-mobile {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .call-to-action {
+    display: block;
+    padding: 10px 30px;
+  }
+  .call-to-action h1 {
+    color: black;
+    font-size: 24px;
+  }
+  .call-to-action p {
+    color: #a1a1a1;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .call-to-action .button {
+    cursor: pointer;
+    margin-top: 20px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+  }
+  #section-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-image-dark,
+  .about-image-light {
+    max-width: inherit;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  #header-navigation {
+    display: none;
+  }
+  .display-image {
+    max-width: 100%;
+  }
+  #section-one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #header-navigation-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    background: none;
+  }
+  #header-navigation-mobile #menu {
+    position: relative;
+    left: 30px;
+    width: 16px;
+    height: 14px;
+    background-image: url(images/icon-hamburger.svg);
+    background-repeat: no-repeat;
+  }
+  #header-navigation-mobile .logo-header {
+    display: block;
+    position: relative;
+    top: 3px;
+    left: 200px;
+  }
+  #header-navigation-mobile .links {
+    display: none;
+    width: 300px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    list-style-type: none;
+  }
+  .scroll-arrows-mobile {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    bottom: 5px;
+    right: 0;
+  }
+  .call-to-action {
+    display: block;
+    padding: 5px 30px;
+  }
+  .call-to-action h1 {
+    color: black;
+    font-size: 24px;
+  }
+  .call-to-action p {
+    color: #a1a1a1;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .call-to-action .button {
+    cursor: pointer;
+    margin-top: 10px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+  }
+  #section-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px;
+  }
+  .about-image-dark,
+  .about-image-light {
+    max-width: inherit;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 950px) {
+  #header-navigation {
+    display: none;
+  }
+  .display-image {
+    max-width: 100%;
+  }
+  #section-one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #header-navigation-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    background: none;
+  }
+  #header-navigation-mobile #menu {
+    position: relative;
+    left: 30px;
+    width: 16px;
+    height: 14px;
+    background-image: url(images/icon-hamburger.svg);
+    background-repeat: no-repeat;
+  }
+  #header-navigation-mobile .logo-header {
+    display: block;
+    position: relative;
+    top: 3px;
+    left: 350px;
+  }
+  #header-navigation-mobile .links {
+    display: none;
+    width: 400px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    list-style-type: none;
+  }
+  .scroll-arrows-mobile {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    bottom: 5px;
+    right: 0;
+  }
+  .call-to-action {
+    display: block;
+    padding: 5px 30px;
+  }
+  .call-to-action h1 {
+    color: black;
+    font-size: 24px;
+  }
+  .call-to-action p {
+    color: #a1a1a1;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .call-to-action .button {
+    cursor: pointer;
+    margin-top: 10px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+  }
+  #section-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 150px;
+  }
+  .about-image-dark,
+  .about-image-light {
+    max-width: inherit;
+  }
+}
+
+@media only screen and (min-width: 951px) and (max-width: 1366px) {
+  #section-one {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
+    max-height: 534px;
+  }
+  .call-to-action {
+    position: relative;
+    display: block;
+    padding: 75px 90px;
+  }
+  .call-to-action h1 {
+    color: black;
+    font-size: 28px;
+  }
+  .call-to-action p {
+    color: #a1a1a1;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .call-to-action .button {
+    cursor: pointer;
+    margin-top: 40px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+  }
+  .call-to-action .button:hover {
+    opacity: 0.7;
+  }
+  .call-to-action .scroll-arrows {
+    position: absolute;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    bottom: 5px;
+    left: 0;
+  }
+  .call-to-action .scroll-arrows span {
+    margin: 0;
+    padding: 8px 10.5px;
+    background: black;
+  }
+  .call-to-action .scroll-arrows span:hover {
+    background: #454545;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .call-to-action .scroll-arrows {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
